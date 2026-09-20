@@ -1,0 +1,560 @@
+<!DOCTYPE html><html class="light" lang="ru" translate="no"><head>
+    <script nonce="7bb19b4ccce92187affa7f76fd902f1e">document.documentElement.classList.add('js-enabled');</script>
+    <title>Официальный сайт</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="favicon_v%3D12.ico" type="image/x-icon">
+    <meta name="description" content="Официальный сайт игровой политической партии ЛДПС на серверах RMRP (Рублёвский, Арбатский, Патриарший, Тверской, Кутузовский). Программа, цели и состав партии.">
+    <meta name="keywords" content="ЛДПС, партия, контроль, порядок, политика, Россия, программа партии">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ЛДПС - Официальный сайт">
+    <meta property="og:description" content="Официальный сайт игровой политической партии ЛДПС на серверах RMRP (Рублёвский, Арбатский, Патриарший, Тверской, Кутузовский). Программа, цели и состав партии.">
+    <meta property="og:url" content="https://ldps.ru/">
+    <meta property="og:site_name" content="ЛДПС">
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ЛДПС - Официальный сайт">
+    <meta name="twitter:description" content="Официальный сайт игровой политической партии ЛДПС на серверах RMRP (Рублёвский, Арбатский, Патриарший, Тверской, Кутузовский). Программа, цели и состав партии.">
+    
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" href="assets/fonts/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app_v%3D27.css">
+    <script nonce="7bb19b4ccce92187affa7f76fd902f1e" src="assets/js/app_v%3D27.js" defer=""></script>
+    <script nonce="7bb19b4ccce92187affa7f76fd902f1e" src="assets/js/modals_v%3D27.js" defer=""></script>
+    <script nonce="7bb19b4ccce92187affa7f76fd902f1e" src="assets/js/nav_v%3D27.js" defer=""></script>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen " data-spa="1" data-base-url="">
+
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+    <div class="flex justify-between items-center px-6 md:px-8 h-20 max-w-7xl mx-auto">
+        <a class="flex items-center gap-3 cursor-pointer" href="/" data-nav-path="/">
+            <span class="text-2xl font-bold tracking-tight text-slate-900">ЛДПС</span>
+            <span class="hidden lg:block text-[10px] font-semibold text-slate-500 uppercase tracking-widest border-l border-slate-300 pl-3 leading-tight">Будет контроль —<br>будет порядок</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-6 items-center">
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-900" href="/" data-nav-path="/">Главная</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="/about" data-nav-path="/about">О партии</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="/members" data-nav-path="/members">Состав</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="/press" data-nav-path="/press">Пресс-служба</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="/join" data-nav-path="/join">Вступить</a>
+        </div>
+        
+        <div class="flex items-center space-x-4 md:space-x-6">
+            
+            <form action="/search" method="GET" class="hidden lg:flex items-center self-center bg-[#f0f4f6] pl-5 pr-6 py-2.5 rounded-full">
+                <span class="material-symbols-outlined text-[#7c8a90] text-[20px] select-none">search</span>
+                <input name="q" class="bg-transparent border-none focus:ring-transparent focus:outline-none focus:ring-0 focus:border-none focus:shadow-none text-[15px] text-on-surface placeholder-[#7c8a90] w-28 ml-2.5 p-0 outline-none leading-none" placeholder="Поиск" type="text" autocomplete="off" value="">
+            </form>
+            
+                            <a href="/login" class="nav-auth-btn bg-[#3557bc] text-white px-6 py-2 rounded-xl font-bold inline-flex items-center self-center" data-no-spa="">Вход</a>
+                        
+            <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-2xl bg-surface-container" aria-label="Toggle menu">
+                <span class="material-symbols-outlined text-on-surface">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 shadow-2xl transition-all duration-300 transform -translate-y-4 opacity-0 invisible z-40 max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div class="flex flex-col p-6 space-y-2">
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-900" href="/" data-nav-path="/">Главная</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/about" data-nav-path="/about">О партии</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/members" data-nav-path="/members">Состав</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/press" data-nav-path="/press">Пресс-служба</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/join" data-nav-path="/join">Вступить</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/deputy-reserve" data-nav-path="/deputy-reserve">Депутатский резерв</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/bills" data-nav-path="/bills">Законопроекты</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="/docs" data-nav-path="/docs">Документы</a>
+            
+            <div class="pt-4 mt-2 border-t border-slate-100 flex flex-col gap-3">
+                                    <a href="/login" class="w-full bg-[#3557bc] hover:bg-[#274baf] text-white py-3.5 rounded-2xl font-bold transition-all text-center block text-base shadow-sm" data-no-spa="">Авторизация</a>
+                            </div>
+        </div>
+    </div>
+    <div class="bg-slate-100 h-[1px]"></div>
+</nav>
+
+<div class="h-20"></div>
+<div class="bg-amber-50 border-b border-amber-200/60 py-3.5 px-6 md:px-8 text-center text-amber-800 text-[13px] font-semibold shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-center">
+        <span>Данный сайт не является реальным политическим ресурсом и создан исключительно для игрового проекта RMRP.</span>
+    </div>
+</div>
+<div id="page-swap">
+
+<main id="home-page-main" class="flex-grow w-full">
+<section class="relative pt-32 pb-24 overflow-hidden">
+    
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none z-0"></div>
+    
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="z-10">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Официальный сайт игровой партии RMRP</span>
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tight text-on-surface leading-[1.1] mb-6">
+                Построим будущее вместе с ЛДПС
+            </h1>
+            <p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                Наша программа, история и цели для создания лучшего завтра. Присоединяйтесь к движению на Рублёвском, Арбатском, Патриаршем, Тверском, Кутузовском округах.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://discord.gg/mVMKVqqRDc" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-8 py-4 rounded-2xl font-bold text-lg hover:opacity-90 transition-all active:scale-95 text-center flex items-center justify-center">
+                    Присоединиться
+                </a>
+                <a href="/program" class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-2xl font-bold text-lg hover:bg-surface-container-high transition-all text-center flex items-center justify-center">
+                    Наша программа
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl bg-surface-container">
+                <img class="w-full h-full object-cover object-center min-h-[280px]" alt="Главная страница ЛДПС" src="uploads/img_1781004551_2338.webp" width="1200" height="1200" fetchpriority="high" decoding="async">
+            </div>
+            
+            <div class="absolute -bottom-8 -left-8 bg-white/70 backdrop-blur-2xl p-8 rounded-3xl shadow-xl border border-white/20 max-w-xs hidden md:block">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary">trending_up</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg">+25%</p>
+                        <p class="text-xs text-on-surface-variant">Рост поддержки</p>
+                    </div>
+                </div>
+                <p class="text-sm text-on-surface-variant leading-tight">Мы активно растем и привлекаем новых сторонников в наших округах.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+                <h2 class="text-4xl font-bold tracking-tight mb-4">Быстрый доступ</h2>
+                <p class="text-on-surface-variant">Все самое важное для участников и сторонников партии.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <a href="/program" class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-primary transition-all duration-500 cursor-pointer block">
+                <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white">menu_book</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-white">Наша программа</h3>
+                <p class="text-on-surface-variant text-sm group-hover:text-white/80">Основные тезисы и план развития страны.</p>
+            </a>
+            
+            <a href="/charter" class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-primary transition-all duration-500 cursor-pointer block">
+                <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white">gavel</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-white">Устав</h3>
+                <p class="text-on-surface-variant text-sm group-hover:text-white/80">Официальный документ и правила партии.</p>
+            </a>
+            
+            <a href="/join" class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-primary transition-all duration-500 cursor-pointer block">
+                <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white">person_add</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-white">Вступить</h3>
+                <p class="text-on-surface-variant text-sm group-hover:text-white/80">Подайте заявку на вступление в игровую партию.</p>
+            </a>
+            
+            <a href="/press" class="group bg-surface-container-lowest p-8 rounded-[2rem] hover:bg-primary transition-all duration-500 cursor-pointer block">
+                <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white">newspaper</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-white">Пресс-центр</h3>
+                <p class="text-on-surface-variant text-sm group-hover:text-white/80">Материалы для СМИ и последние отчеты.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex justify-between items-center mb-16">
+            <h2 class="text-4xl font-bold tracking-tight">Последние новости</h2>
+            <a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="/press">
+                Все новости <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                                                <div class="news-card group cursor-pointer flex flex-col bg-white border border-slate-200/70 rounded-3xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-shadow transition-colors duration-200" data-id="28" data-code="10ada5db" data-seq="14" data-title="С Днем Государственного флага 🏛️" data-category="1" data-summary="Сегодня особый день для каждого из нас, момент гордости за общую историю, культуру и великие победы. Председатель партии Александр Сухомлин и кандидат в губернаторы Мария Римская от всего сердца поздравляют вас с Днем Государственного флага Российской Федерации. Российский трехцветный стяг объединяет миллионы людей, напоминает о верности родине, чести и нерушимом единстве нашего народа." data-content="Сегодня особый день для каждого из нас, момент гордости за общую историю, культуру и великие победы. Председатель партии Александр Сухомлин и кандидат в губернаторы Мария Римская от всего сердца поздравляют вас с Днем Государственного флага Российской Федерации. Российский трехцветный стяг объединяет миллионы людей, напоминает о верности родине, чести и нерушимом единстве нашего народа.||||||Флаг России символизирует богатые традиции и уверенный взгляд в будущее. В каждом его цвете заложена глубокая история побед наших предков, стойкость и стремление к справедливости. Мы видим, как много сил и душевного тепла каждый житель вкладывает в процветание Рублёвского федерального округа. Именно ваша энергия и любовь к родной земле создают настоящую силу этого государственного символа.||||||Пусть этот праздничный день принесет в ваши дома уют, радость и уверенность в завтрашнем дне. Партия ЛДПС продолжит делать все возможное для защиты интересов граждан, развития округа и создания достойного будущего. Желаем вам крепкого здоровья, благополучия, мира и новых свершений на благо нашей любимой страны." data-image="/uploads/img_1787416579_4907.webp" data-image2="" data-image3="" data-image4="" data-video="" data-date="22.08.2026">
+                        <div class="aspect-video overflow-hidden shrink-0 relative bg-slate-100">
+                                                              <img class="img-blur-load w-full h-full object-cover" alt="С Днем Государственного флага 🏛️" src="uploads/img_1787416579_4907.webp" loading="lazy" decoding="async" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                     </div>
+                        <div class="flex flex-col flex-grow p-5">
+                            <span class="text-primary font-bold text-xs uppercase mb-2 block">1</span>
+                            <h3 class="text-lg font-bold mb-2 leading-snug group-hover:text-primary transition-colors line-clamp-2">С Днем Государственного флага 🏛️</h3>
+                            <div class="flex-grow mb-3">
+                                <p class="text-on-surface-variant text-sm line-clamp-3">Сегодня особый день для каждого из нас, момент гордости за общую историю, культуру и великие победы. Председатель партии Александр Сухомлин и кандидат в губернаторы Мария Римская от всего сердца поздравляют вас с Днем Государственного флага Российской Федерации. Российский трехцветный стяг объединяет миллионы людей, напоминает о верности родине, чести и нерушимом единстве нашего народа.</p>
+                            </div>
+                            <span class="text-outline text-xs mt-auto">22.08.2026</span>
+                        </div>
+                    </div>
+                                    <div class="news-card group cursor-pointer flex flex-col bg-white border border-slate-200/70 rounded-3xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-shadow transition-colors duration-200" data-id="24" data-code="512d48de" data-seq="13" data-title="С любовью к нашей Родине ❤️" data-category="1" data-summary="Сегодня, 12 июня, мы вместе со всей страной отмечаем важнейший государственный праздник — День России. Эта знаменательная дата символизирует многовековую историю нашего независимого государства, неразрывное единство многонационального народа и общую ответственность за судьбу родного края. В этот день мы с особым трепетом осознаем величие нашего исторического наследия и исключительную важность сохранения традиций для будущих поколений." data-content="Сегодня, 12 июня, мы вместе со всей страной отмечаем важнейший государственный праздник — День России. Эта знаменательная дата символизирует многовековую историю нашего независимого государства, неразрывное единство многонационального народа и общую ответственность за судьбу родного края. В этот день мы с особым трепетом осознаем величие нашего исторического наследия и исключительную важность сохранения традиций для будущих поколений.||||||Председатель партии Александр Сухомлин и кандидат на должность Губернатора Мария Старк искренне поздравляют каждого гражданина с этим торжественным событием. Наша команда не сомневается, что главное богатство страны — это ее целеустремленные и трудолюбивые люди, которые ежедневно вносят свой вклад в развитие общества. Мы продолжаем уверенно двигаться вперед, объединяя усилия ради укрепления экономики, социальной стабильности и всестороннего процветания нашего округа.||||||В этот светлый и праздничный день от всей души желаем вам и вашим близким непоколебимого здоровья, мирного неба над головой и светлой уверенности в завтрашнем дне. Пусть в каждом доме всегда безоговорочно царят гармония, искренняя любовь и семейный уют, а любые ваши начинания приводят к грандиозным успехам. Счастья вам, добра, неиссякаемой созидательной энергии и великих свершений на благо нашей Родины. С праздником!" data-image="/uploads/img_1781328787_5961.webp" data-image2="" data-image3="" data-image4="" data-video="" data-date="12.06.2026">
+                        <div class="aspect-video overflow-hidden shrink-0 relative bg-slate-100">
+                                                              <img class="img-blur-load w-full h-full object-cover" alt="С любовью к нашей Родине ❤️" src="uploads/img_1781328787_5961.webp" loading="lazy" decoding="async" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                     </div>
+                        <div class="flex flex-col flex-grow p-5">
+                            <span class="text-primary font-bold text-xs uppercase mb-2 block">1</span>
+                            <h3 class="text-lg font-bold mb-2 leading-snug group-hover:text-primary transition-colors line-clamp-2">С любовью к нашей Родине ❤️</h3>
+                            <div class="flex-grow mb-3">
+                                <p class="text-on-surface-variant text-sm line-clamp-3">Сегодня, 12 июня, мы вместе со всей страной отмечаем важнейший государственный праздник — День России. Эта знаменательная дата символизирует многовековую историю нашего независимого государства, неразрывное единство многонационального народа и общую ответственность за судьбу родного края. В этот день мы с особым трепетом осознаем величие нашего исторического наследия и исключительную важность сохранения традиций для будущих поколений.</p>
+                            </div>
+                            <span class="text-outline text-xs mt-auto">12.06.2026</span>
+                        </div>
+                    </div>
+                                    <div class="news-card group cursor-pointer flex flex-col bg-white border border-slate-200/70 rounded-3xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-shadow transition-colors duration-200" data-id="21" data-code="4cca5772" data-seq="12" data-title="Ваш голос решает всё" data-category="1" data-summary="Завтра, 24 мая 2026 года, состоятся выборы Губернатора Рублевского Федерального Округа. Мы ждем каждого неравнодушного гражданина возле здания Правительства, где будет организовано официальное голосование. Избирательный пункт открыт с 08.00 до 22.00 по московскому времени. Не упускайте возможность лично повлиять на будущее нашего округа." data-content="Завтра, 24 мая 2026 года, состоятся выборы Губернатора Рублевского Федерального Округа. Мы ждем каждого неравнодушного гражданина возле здания Правительства, где будет организовано официальное голосование. Избирательный пункт открыт с 08.00 до 22.00 по московскому времени. Не упускайте возможность лично повлиять на будущее нашего округа.||||||Партия ЛДПС твердо уверена в своем кандидате и призывает вас отдать голос за Матвея Никольского. Его программа направлена на реальное улучшение качества жизни, укрепление экономики и всестороннюю социальную поддержку населения. Поддерживая Матвея Никольского, вы делаете выбор в пользу надежного руководителя и слаженной команды профессионалов. Голосуйте за стабильность и уверенное процветание вместе с нами.||||||Чтобы выборы прошли максимально честно и прозрачно, просим строго соблюдать установленные правила. Напоминаем, что в день голосования любая политическая агитация полностью запрещена. Под агитацией подразумевается даже простое упоминание названий партий или имен кандидатов вблизи избирательного участка. Уважайте закон и личный выбор каждого гражданина, чтобы процесс прошел в строгом соответствии с нормами." data-image="/uploads/img_1779966612_5393.webp" data-image2="" data-image3="" data-image4="" data-video="" data-date="23.05.2026">
+                        <div class="aspect-video overflow-hidden shrink-0 relative bg-slate-100">
+                                                              <img class="img-blur-load w-full h-full object-cover" alt="Ваш голос решает всё" src="uploads/img_1779966612_5393.webp" loading="lazy" decoding="async" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                     </div>
+                        <div class="flex flex-col flex-grow p-5">
+                            <span class="text-primary font-bold text-xs uppercase mb-2 block">1</span>
+                            <h3 class="text-lg font-bold mb-2 leading-snug group-hover:text-primary transition-colors line-clamp-2">Ваш голос решает всё</h3>
+                            <div class="flex-grow mb-3">
+                                <p class="text-on-surface-variant text-sm line-clamp-3">Завтра, 24 мая 2026 года, состоятся выборы Губернатора Рублевского Федерального Округа. Мы ждем каждого неравнодушного гражданина возле здания Правительства, где будет организовано официальное голосование. Избирательный пункт открыт с 08.00 до 22.00 по московскому времени. Не упускайте возможность лично повлиять на будущее нашего округа.</p>
+                            </div>
+                            <span class="text-outline text-xs mt-auto">23.05.2026</span>
+                        </div>
+                    </div>
+                                    </div>
+    </div>
+</section>
+
+
+<section class="py-24 px-8">
+    <div class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-primary-dim rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+        
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+        <h2 class="text-3xl md:text-4xl font-bold text-on-primary mb-6 relative z-10 tracking-tight">Готовы менять жизнь округов?</h2>
+        <p class="text-lg text-primary-fixed opacity-90 mb-10 max-w-2xl mx-auto relative z-10 leading-relaxed">
+            Следите за нашим форумом, чтобы первым узнавать о новых инициативах, или подайте заявку на вступление в партию прямо сейчас.
+        </p>
+        <div class="flex justify-center relative z-10">
+            <a href="https://forum.rmrp.ru/threads/liberalno-demokraticheskaja-partija-strany.229722/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white text-primary px-10 py-4 rounded-2xl font-bold text-lg hover:bg-opacity-90 transition-all active:scale-95 text-center flex items-center justify-center">
+                Посмотреть
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="post-modal" class="site-modal opacity-0 pointer-events-none">
+    <div class="site-modal-panel max-w-4xl p-8 md:p-10" style="min-height:220px;">
+        <button id="close-post-modal-btn" class="site-modal-close" aria-label="Закрыть">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        
+        <div class="flex items-center gap-4 mb-4">
+            <span id="modal-post-category" class="text-primary font-bold text-xs uppercase tracking-wider bg-blue-50 px-3.5 py-1 rounded-full"></span>
+            <span id="modal-post-date" class="text-outline text-sm"></span>
+        </div>
+
+        <div id="modal-post-media"></div>
+
+        <h1 id="modal-post-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight leading-tight my-6"></h1>
+
+        <div id="modal-post-content" class="text-slate-700 leading-relaxed max-w-none space-y-4"></div>
+    </div>
+</div>
+
+<script nonce="7bb19b4ccce92187affa7f76fd902f1e">
+(function() {
+    const modal = document.getElementById('post-modal');
+    if (!modal) return;
+    if (window.moveModalsToBody) window.moveModalsToBody();
+
+    const fields = {
+        title: document.getElementById('modal-post-title'),
+        category: document.getElementById('modal-post-category'),
+        date: document.getElementById('modal-post-date'),
+        media: document.getElementById('modal-post-media'),
+        content: document.getElementById('modal-post-content')
+    };
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function parseDiscordEmojisJS(text) {
+        if (window.parseDiscordEmojisJS) {
+            return window.parseDiscordEmojisJS(text);
+        }
+        if (!text) return '';
+        let escaped = escapeHtml(text);
+        escaped = escaped.replace(/&lt;(a?):([a-zA-Z0-9_]{2,32}):([0-9]{17,21})&gt;/g, function(match, isAnimated, name, id) {
+            let ext = isAnimated ? 'gif' : 'png';
+            return `<img class="discord-emoji inline-block h-[1.3em] w-auto align-middle select-all -mt-1" style="height: 1.3em; display: inline-block; vertical-align: middle; margin-top: -0.25em;" src="https://cdn.discordapp.com/emojis/${id}.${ext}?size=48&quality=lossless" alt="${name}" title=":${name}:" />`;
+        });
+        escaped = escaped.replace(/<(a?):([a-zA-Z0-9_]{2,32}):([0-9]{17,21})>/g, function(match, isAnimated, name, id) {
+            let ext = isAnimated ? 'gif' : 'png';
+            return `<img class="discord-emoji inline-block h-[1.3em] w-auto align-middle select-all -mt-1" style="height: 1.3em; display: inline-block; vertical-align: middle; margin-top: -0.25em;" src="https://cdn.discordapp.com/emojis/${id}.${ext}?size=48&quality=lossless" alt="${name}" title=":${name}:" />`;
+        });
+        return escaped;
+    }
+
+    function parseBBCodeJS(text) {
+        if (!text) return '';
+        const raw = text.replace(/\|\|\|/g, '\n');
+        return window.parseBBCodeJS(raw);
+    }
+
+    function getYoutubeEmbed(url) {
+        if (!url) return '';
+        const cleanUrl = url.trim();
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+        const m = cleanUrl.match(regExp);
+        if (m && m[2].length === 11) {
+            const ytCode = m[2];
+            return `<div class="shrink-0 w-full aspect-video bg-black rounded-3xl overflow-hidden shadow-xl my-6 max-w-2xl"><iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/${ytCode}?rel=0&modestbranding=1&playsinline=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>`;
+        }
+        return '';
+    }
+
+    function renderParagraphs(text) {
+        return parseBBCodeJS(text);
+    }
+
+    let galleryImages = [];
+    let galleryIndex = 0;
+
+    function buildGallery(images, title) {
+        galleryImages = images;
+        galleryIndex = 0;
+        if (images.length === 0) return '';
+        if (images.length === 1) {
+            return `<div class="w-full max-h-[500px] overflow-hidden rounded-[2rem] border border-slate-100 shadow-lg mb-8 bg-slate-50 flex items-center justify-center"><img src="${escapeHtml(images[0])}" alt="${escapeHtml(title)}" class="w-full h-auto object-contain max-h-[500px]"></div>`;
+        }
+        const dots = images.map((_, i) => `<button class="gallery-dot w-2 h-2 rounded-full transition-all ${i === 0 ? 'bg-white' : 'bg-white/50'}" data-idx="${i}"></button>`).join('');
+        const thumbs = images.map((img, i) => `<img src="${escapeHtml(img)}" class="gallery-thumb w-16 h-12 object-cover rounded-xl cursor-pointer border-2 ${i === 0 ? 'border-[#3557bc]' : 'border-transparent'} shrink-0 transition-all" data-idx="${i}">`).join('');
+        return `<div class="mb-8" id="modal-gallery">
+            <div class="relative w-full aspect-video rounded-[2rem] border border-slate-100 shadow-lg bg-slate-50 overflow-hidden flex items-center justify-center">
+                <img id="gallery-main-img" src="${escapeHtml(images[0])}" alt="${escapeHtml(title)}" class="w-full h-full object-contain">
+                <button id="gallery-prev" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow flex items-center justify-center text-slate-700 z-10"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button id="gallery-next" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow flex items-center justify-center text-slate-700 z-10"><span class="material-symbols-outlined">chevron_right</span></button>
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10" id="gallery-dots">${dots}</div>
+            </div>
+            <div class="flex gap-2 mt-3 overflow-x-auto pb-1">${thumbs}</div>
+        </div>`;
+    }
+
+    function setGalleryIndex(idx) {
+        if (galleryImages.length === 0) return;
+        galleryIndex = (idx + galleryImages.length) % galleryImages.length;
+        const mainImg = document.getElementById('gallery-main-img');
+        if (mainImg) mainImg.src = galleryImages[galleryIndex];
+        document.querySelectorAll('.gallery-dot').forEach((d, i) => {
+            d.className = `gallery-dot w-2 h-2 rounded-full transition-all ${i === galleryIndex ? 'bg-white' : 'bg-white/50'}`;
+        });
+        document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
+            t.className = `gallery-thumb w-16 h-12 object-cover rounded-xl cursor-pointer border-2 ${i === galleryIndex ? 'border-[#3557bc]' : 'border-transparent'} shrink-0 transition-all`;
+        });
+    }
+
+    function bindGallery() {
+        const prevBtn = document.getElementById('gallery-prev');
+        const nextBtn = document.getElementById('gallery-next');
+        if (prevBtn) prevBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); setGalleryIndex(galleryIndex - 1); });
+        if (nextBtn) nextBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); setGalleryIndex(galleryIndex + 1); });
+        document.querySelectorAll('.gallery-dot').forEach(d => {
+            d.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); setGalleryIndex(parseInt(d.dataset.idx)); });
+        });
+        document.querySelectorAll('.gallery-thumb').forEach(t => {
+            t.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); setGalleryIndex(parseInt(t.dataset.idx)); });
+        });
+    }
+
+    function openModal(data) {
+        fields.title.innerHTML = parseDiscordEmojisJS(data.title);
+        fields.category.textContent = data.category;
+        fields.date.textContent = data.date;
+
+        let mediaHtml = getYoutubeEmbed(data.video);
+        const images = [data.image, data.image2, data.image3, data.image4].filter(img => img && img.trim() !== '');
+        mediaHtml += buildGallery(images, data.title);
+
+        fields.media.innerHTML = mediaHtml;
+        fields.content.innerHTML = renderParagraphs(data.content);
+
+        if (window.openSiteModal) window.openSiteModal(modal);
+        bindGallery();
+
+        if (window.lockScroll) window.lockScroll();
+
+        const newUrl = window.location.pathname + '?post=' + (data.code || data.seq || data.id);
+        window.history.replaceState({ postId: data.id }, '', newUrl);
+    }
+
+    function closeModal() {
+        if (window.closeSiteModal) window.closeSiteModal(modal);
+        
+        if (window.unlockScroll) window.unlockScroll();
+        
+        setTimeout(() => {
+            fields.media.innerHTML = '';
+            fields.content.innerHTML = '';
+            galleryImages = [];
+        }, 200);
+        if (window.location.search.includes('post=')) {
+            window.history.replaceState(null, '', window.location.pathname);
+        }
+    }
+
+    const pageMain = document.getElementById('home-page-main');
+    if (pageMain) {
+        pageMain.addEventListener('click', function(e) {
+            const card = e.target.closest('.news-card');
+            if (card) {
+                e.preventDefault();
+                e.stopPropagation();
+                openModal(card.dataset);
+            }
+        });
+    }
+
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target.closest('#close-post-modal-btn')) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeModal();
+            }
+        });
+    }
+
+    function checkInitialUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get('post');
+        if (postId) {
+            let targetCard = document.querySelector('.news-card[data-code="' + postId + '"]');
+            if (!targetCard) {
+                targetCard = document.querySelector('.news-card[data-seq="' + postId + '"]');
+            }
+            if (!targetCard) {
+                targetCard = document.querySelector('.news-card[data-id="' + postId + '"]');
+            }
+            if (targetCard) {
+                openModal(targetCard.dataset);
+            }
+        }
+    }
+    checkInitialUrl();
+})();
+</script>
+</main>
+
+</div>
+
+<footer class="w-full py-12 border-t border-slate-200 bg-slate-50 mt-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-4 px-8 max-w-7xl mx-auto">
+        
+        <div class="col-span-1 md:col-span-5">
+            <div class="text-lg font-bold text-slate-900 mb-2">ЛДПС</div>
+            <div class="text-xs font-bold text-[#3557bc] mb-4 uppercase tracking-wider">«Будет контроль — будет порядок»</div>
+            <p class="font-['Inter'] text-sm text-slate-500 leading-relaxed pr-8">
+                Либерально-Демократическая Партия Страны. Мы работаем для людей и ради будущего нашей великой родины.
+            </p>
+        </div>
+        
+        
+        <div class="col-span-1 md:col-span-4 grid grid-cols-2 gap-8">
+            
+            <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-5">Информация</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/history">История</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/charter">Устав</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/program">Программа</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/bills">Законопроекты</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/contacts">Контакты</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="/docs">Документация</a></li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-5">Связь</h4>
+                <ul class="space-y-4">
+                    <li><span class="font-['Inter'] text-sm text-slate-500 select-text break-all cursor-default block leading-relaxed">darkysik@rmrp.ru</span></li>
+                    <li><span class="font-['Inter'] text-sm text-slate-500 select-text cursor-default block leading-relaxed">+1 (234) 567-89-10</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="col-span-1 md:col-span-3">
+            <h4 class="text-sm font-bold text-slate-900 mb-5">Соцсети</h4>
+            <div class="flex flex-wrap gap-4">
+                <a class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-[#5865F2] transition-colors group no-underline hover:no-underline" href="https://discord.gg/mVMKVqqRDc" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-slate-600 group-hover:text-white" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
+                    </svg>
+                </a>
+                <a class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-[#FF0000] transition-colors group no-underline hover:no-underline" href="https://www.youtube.com/@rmrpldps" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-slate-600 group-hover:text-white" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.052-.072 1.972l-.008.104-.022.261-.01.104c-.048.519-.119 1.023-.22 1.402a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c1.16-.312 5.569-.334 6.18-.335h.142ZM6.5 10.5 10.5 8 6.5 5.5v5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-10 pt-8 border-t border-slate-200/50">
+        <div class="text-center max-w-3xl mx-auto">
+            <p class="font-['Inter'] text-sm text-slate-500 mb-2">© 2026 Либерально-Демократическая Партия Страны (ЛДПС)</p>
+            <p class="font-['Inter'] text-xs text-slate-400 mb-4">Данный сайт не является реальным политическим ресурсом и создан исключительно для игрового проекта RMRP.</p>
+            <p class="font-['Inter'] text-xs text-slate-400">v 3 (Special version 14.08.2026)</p>
+        </div>
+    </div>
+</footer>
+
+<script nonce="7bb19b4ccce92187affa7f76fd902f1e">
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+        mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+            mobileMenu.classList.add('-translate-y-4', 'opacity-0', 'invisible');
+            mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'visible');
+            mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">menu</span>';
+        } else {
+            mobileMenu.classList.remove('-translate-y-4', 'opacity-0', 'invisible');
+            mobileMenu.classList.add('translate-y-0', 'opacity-100', 'visible');
+            mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">close</span>';
+        }
+    });
+}
+
+function closeMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('-translate-y-4', 'opacity-0', 'invisible');
+        mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'visible');
+        mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">menu</span>';
+    }
+}
+
+</script>
+<script nonce="7bb19b4ccce92187affa7f76fd902f1e" src="assets/js/nav.js" defer=""></script>
+
+</body></html>
